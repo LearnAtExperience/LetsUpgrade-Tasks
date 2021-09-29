@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day-1 Task</title>
+  <style>
+    main {
+      max-width: 100vw;
+      display: flex;
+      justify-content: center;
+      gap: 2%;
+      background-color: rgb(98, 131, 204);
+      padding: 0.5rem;
+    }
+
+    .mainGroup {
+      width: 18%;
+      height: 180px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0000f;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 2em;
+      color: white;
+      border-radius: 0.3rem;
+    }
+
+    @media (max-width: 768px) and (min-width: 577px) {
+
+      main {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .mainGroup {
+        width: 75%;
+      }
+
+    }
+
+    @media (max-width: 576px) {
+
+      main {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .mainGroup {
+        width: 100%;
+        border-radius: 0;
+      }
+
+      .mainGroup:nth-child(2) {
+        background-color: saddlebrown;
+      }
+
+      .mainGroup:nth-child(3) {
+        background-color: crimson;
+      }
+
+      .mainGroup:nth-child(4) {
+        background-color: salmon;
+      }
+
+      .mainGroup:nth-child(5) {
+        background-color: palevioletred;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="mainGroup">Card 1</section>
+    <section class="mainGroup">Card 2</section>
+    <section class="mainGroup">Card 3</section>
+    <section class="mainGroup">Card 4</section>
+    <section class="mainGroup">Card 5</section>
+  </main>
+</body>
+
+</html>
