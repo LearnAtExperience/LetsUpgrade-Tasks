@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+/* Stylings for header */
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 60px;
+  z-index: 99;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f2e30;
+}
+
+.navbar-brand>h2 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.navbar-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-menu>a {
+  text-decoration: none;
+  color: lightgrey;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  transition: 0.1s;
+}
+
+.navbar-menu>a:hover {
+  border-bottom: #00eeff 2px solid;
+  color: #00eeff;
+}
+
+/* Stylings for header ends */
+
+/* Stylings for banner */
+
+.banner {
+  width: 100%;
+  height: 70vh;
+  background-color: grey;
+  background-image: url(https://images.pexels.com/photos/4159867/pexels-photo-4159867.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position-y: -400px;
+}
+
+.banner-desc {
+  width: 40%;
+  background-color: rgba(0,0,0,0.2);
+  font-family: 'Raleway', sans-serif;
+  font-size: 37px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 100px;
+  margin-left: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.banner-desc p {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  background-color: #1365e0;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #3e7cd8;
+}
+
+/* Stylings for banner ends */
+
+/* Stylings for places */
+
+.places {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.places-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.places-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.places-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  flex-wrap: wrap;
+}
+
+.place {
+  width: 22%;
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.place1 {
+  background-image: url(https://images.pexels.com/photos/2619004/pexels-photo-2619004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+.place2 {
+  background-image: url(https://images.pexels.com/photos/3065228/pexels-photo-3065228.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.place3 {
+  background-image: url(https://images.pexels.com/photos/1224260/pexels-photo-1224260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.place4 {
+  background-image: url(https://images.pexels.com/photos/3065229/pexels-photo-3065229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.place-desc {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  transition: 0.3s;
+}
+
+.place-desc:hover {
+  height: 300px;
+}
+
+.padd {
+  padding: 10px 20px;
+}
+
+.place-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+.place-btn {
+  padding: 5px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background-color: #1365e0;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+}
+
+.place-btn:hover {
+  background-color: #3e7cd8;
+}
+
+/* Stylings for places ends */
+
+/* Stylings for contacts */
+
+.contact {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #2f2e30;
+  color: white;
+}
+
+.contact>span {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.contact>span>i {
+  margin-right: 0.5rem;
+  font-size: 25px;
+}
+
+/* Stylings for contact ends */
+
+
+
+@media (max-width: 576px) {
+
+  header {
+    height: auto;
+  }
+
+  .navbar {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu>a:hover {
+    border-bottom: none;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+.banner {
+  height: 50vh;
+  background-position-y: 0;
+}
+
+.banner-desc {
+  margin: 20% 2.5%;
+  width: 95%;
+  height: 60%;
+  font-size: 28px;
+  border-radius: 0.4rem;
+}
+
+.place {
+  width: 100%;
+}
+
+.contact {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+}
